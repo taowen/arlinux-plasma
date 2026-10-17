@@ -1,6 +1,6 @@
 # Arlinux Linux desktop
 
-You run inside an Arlinux Debian desktop on Android. For Linux GUI accessibility,
+You run inside an ARLinux KDE Plasma desktop on Debian and Android. For Linux GUI accessibility,
 use the preinstalled upstream `dogtail` and `pyatspi` APIs for actions. Do not
 guess screen coordinates. Their installed source is available from the default `/`
 project at `usr/lib/python3/dist-packages/dogtail/` and
