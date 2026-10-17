@@ -1,0 +1,45 @@
+{
+  "$schema": "../../schemas/profile.schema.json",
+  "schemaVersion": 3,
+  "id": "plasma",
+  "name": "KDE Plasma",
+  "display": {
+    "dpi": 144,
+    "socket": "filesystem"
+  },
+  "launch": {
+    "executable": "${RUNTIME}/usr/bin/dbus-run-session",
+    "workingDirectory": "${RUNTIME}",
+    "arguments": [
+      "--",
+      "${RUNTIME}/usr/lib/arlinux/accessibility-session.sh",
+      "${RUNTIME}/bin/sh",
+      "${RUNTIME}/usr/lib/arlinux/guest/desktop.sh"
+    ],
+    "environment": {
+      "DISPLAY": "${DISPLAY}",
+      "HOME": "${HOME}",
+      "XDG_RUNTIME_DIR": "${FILES}/runtime",
+      "XKB_CONFIG_ROOT": "${FILES}/xkb",
+      "GDK_BACKEND": "x11",
+      "XDG_DATA_DIRS": "${RUNTIME}/usr/share",
+      "QT_QPA_PLATFORM": "xcb",
+      "SHELL": "${RUNTIME}/bin/bash",
+      "TERM": "xterm-256color",
+      "PATH": "${RUNTIME}/usr/local/sbin:${RUNTIME}/usr/local/bin:${RUNTIME}/usr/sbin:${RUNTIME}/usr/bin:${RUNTIME}/sbin:${RUNTIME}/bin:/product/bin:/system/bin",
+      "LANG": "C.UTF-8",
+      "LC_ALL": "C.UTF-8",
+      "GTK_IM_MODULE": "ibus",
+      "QT_IM_MODULE": "ibus",
+      "XMODIFIERS": "@im=ibus",
+      "XDG_CURRENT_DESKTOP": "KDE",
+      "XDG_SESSION_DESKTOP": "KDE",
+      "XDG_SESSION_TYPE": "x11",
+      "KDE_FULL_SESSION": "true",
+      "KDE_SESSION_VERSION": "6",
+      "QT_LINUX_ACCESSIBILITY_ALWAYS_ON": "1",
+      "QT_FONT_DPI": "144",
+      "ACCESSIBILITY_ENABLED": "1"
+    }
+  }
+}
