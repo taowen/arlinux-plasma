@@ -9,6 +9,6 @@ Desktop packages, Dolphin, Konsole and Kate are included in the offline ZIP.
 First start performs local configuration and does not download packages.
 OpenCode, Steam and Windows apps retain their normal on-demand installers.
 
-构建与发布只遵循 [唯一构建与发布流程](https://github.com/taowen/arlinux-rootfs/blob/main/docs/BUILD.md)。软件包在 Linux/WSL 构建时准备。
+Builds and releases follow the [canonical build and release guide](https://github.com/taowen/arlinux-rootfs/blob/main/docs/BUILD.md). Packages are prepared during the Linux/WSL build.
 
 GPL-3.0-or-later for this recipe. Debian and KDE packages retain their licenses.
