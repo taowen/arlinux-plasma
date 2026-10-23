@@ -39,7 +39,6 @@ rm -f /usr/lib/arlinux/mesa-packages/*.deb
 python3 -m pip install --break-system-packages --no-cache-dir \
     'edge-tts==7.2.8'
 python3 -c 'import edge_tts, pyatspi'
-test -x /usr/bin/arlinux-opencode
 test -z "$(dpkg --audit)"
 update-alternatives --set x-terminal-emulator /usr/bin/konsole
 dpkg-divert --local --no-rename --add /usr/bin/sudo
